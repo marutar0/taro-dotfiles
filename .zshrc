@@ -10,7 +10,6 @@
 # zinit
 # ------------------------------------------------------------------------
 
-# TS i-Filterに違法ソフト・反社会行為として拒否されたのでコメントアウト
 # source $ZSHRC_DIR/zinit.zsh
 # source $ZSHRC_DIR/plugin.zsh
 
