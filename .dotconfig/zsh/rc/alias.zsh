@@ -99,13 +99,7 @@ alias vi=nvim
 alias vim=nvim
 
 # ------------------------------------------------------------------------
-# Edit dotfiles
+# Open dotfiles
 # ------------------------------------------------------------------------
-
-alias vdot='vi $HOME/.dotconfig'
-
-# ------------------------------------------------------------------------
-# other
-# ------------------------------------------------------------------------
-
-alias openrepo='open "https://github.com/Jimon-s?tab=repositories"'
+# .zlocalに$DOTFILE_PATHを設定
+alias odotfile='code $DOTFILE_PATH'
