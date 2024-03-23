@@ -1,42 +1,58 @@
-# 新規PC時の環境構築手順
-## 0.パッケージを更新
+# dotfile
+
+## Set up
+
+### All in one
+新しく使用するPCで開発環境を構築するときに使用するコマンド
+
 ```
-sudo apt update
-sudo apt upgrade
+make all-in-one
 ```
 
-## 1.zshをインストール
+このコマンドは `deploy` と `install` の両方を正しい順序で実行する。
+
+### Deploy
+ターゲットディレクトリへのドットファイルのシンボリックリンクを作成する。
+
 ```
-sudo apt install zsh
+make deploy-<application_name>
 ```
 
-## 2.oh-my-zshをインストール
+すべてのアプリケーションをデプロイしたい場合は、`make deploy-all`を使う。
+
+### Install
+アプリケーションのインストールや設定を行う。
+
 ```
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+make init-<application_name>
 ```
 
-## 3.zsh-completions(最強の補完機能)をインストール
+すべてのアプリケーションをデプロイしたい場合は、`make install-all`を使う。
+
+## Local values
+
+`$HOME`にあるローカルのファイルをどっとファイルでロードする。
+
+| file               | purpose                                  |
+| ------------------ | ---------------------------------------- |
+| `.zlocal`          | zsh local config                         |
+| `.gitconfig.local` | git local config like user name or email |
+
+### Recommended settings
+`.zlocal`
+
 ```
-git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+# Set directory where lima can get write permission.
+export LIMA_WORKSPACE_DIRECTORY="YOUR_LIMA_PATH"
 ```
 
-## 4.ログインシェルをzshに変更
-```
-chsh -s /usr/bin/zsh
-```
+`.gitconfig.local`
 
-# そのほか
-## お気に入りのテーマを取得
 ```
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k 
-```
-
-## Homebrewをインストール
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-```
-
-## 入力したコマンドを見やすく
-```
-brew install zsh-syntax-highlighting
+[user]
+	name = YOUR_NAME
+	email = YOUR_EMAIL
+[ghq]
+    root = YOUR_GHQ_PATH
+    
 ```
