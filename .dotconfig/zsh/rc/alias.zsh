@@ -14,13 +14,8 @@ function git-add-status () {
 alias gaa='git-add-status'
 alias gd='git diff'
 alias gf='git fetch -p --all'
-function repository-select () {
-  local selected_dir=$(ghq list | peco --query "$LBUFFER")
-  if [ -n "$selected_dir" ]; then
-    BUFFER="cd ${selected_dir}"
-  fi
-}
-alias g='repository-select'
+alias g='repository-select change'
+alias gp='repository-select open'
 
 # ------------------------------------------------------------------------
 # AWS

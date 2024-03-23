@@ -12,8 +12,8 @@
 !/.zshrc
 !/.gitconfig
 !/.gitignore
-!/.Makefile
-!/.README.md
+!/Makefile
+!/README.md
 
 # ------------------------------------------------------------------------
 # /.dotconfig
@@ -56,6 +56,7 @@
 !/.dotconfig/zsh/profile
 !/.dotconfig/zsh/rc
 !/.dotconfig/zsh/rc/alias.zsh
+!/.dotconfig/zsh/rc/function.zsh
 !/.dotconfig/zsh/rc/appearance.zsh
 !/.dotconfig/zsh/rc/bindkey.zsh
 !/.dotconfig/zsh/rc/completion.zsh
@@ -83,7 +84,7 @@
 !/setup/init
 !/setup/init/init_homebrew.sh
 !/setup/init/init_lima_docker.sh
-!/setup/init/init_macOS.sh
+!/setup/init/init_wsl.sh
 !/setup/init/init_node.sh
 !/setup/init/init_vim_plugins.sh
 !/setup/init/init_zinit.sh
