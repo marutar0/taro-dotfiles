@@ -55,6 +55,11 @@ brew "gradle"
 # Vim
 brew "neovim"
 
+# Flutter
+if OS.mac?
+    brew "flutter"
+end
+
 # Font
-tap "delphinus/sfmono-square"
-brew "sfmono-square"
+# tap "delphinus/sfmono-square"
+# brew "sfmono-square"

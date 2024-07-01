@@ -26,6 +26,12 @@ init-brew:
 
 init-node:
 	bash ./setup/init/init_node.sh
+
+init-flutter:
+	bash ./setup/init/init_flutter.sh
+
+init-flutter:
+	bash ./setup/init/init_android.sh
 	
 init-vim-plugins:
 	bash ./setup/init/init_vim_plugins.sh

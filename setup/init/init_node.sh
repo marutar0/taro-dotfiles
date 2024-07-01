@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Install volta
 # https://docs.volta.sh/guide/getting-started
 curl https://get.volta.sh | bash
@@ -7,3 +9,5 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 volta install node
 node -v
+
+volta install yarn

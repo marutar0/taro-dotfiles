@@ -19,5 +19,15 @@ export BAT_CONFIG_PATH=$ZDOTDIR/.dotconfig/bat/bat.conf
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+# Android
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export ANDROID_HOME=$HOME/Android/SDK
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH="$PATH:$ANDROID_HOME/build-tools"    # ビルトツールは別途パスへ追加必要
+
+# Flutter
+export FLUTTER_ROOT="$HOME/flutter"
+export PATH="$PATH:$FLUTTER_ROOT/bin"
+
 # GHQ
 export GHQ_PATH=`echo $(ghq root)`
