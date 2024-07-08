@@ -8,6 +8,9 @@
 export ZDOTDIR=$HOME
 export ZSHRC_DIR=$ZDOTDIR/.dotconfig/zsh/rc
 
+# Display
+export DISPLAY=$(ipconfig.exe | grep "IPv4" | head -1 | awk '{print $NF}' | awk 'sub(/\r$/,"")'):0
+
 # history
 export HISTSIZE=10000
 export SAVEHIST=10000
@@ -20,9 +23,10 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Android
+export ANDROID_HOME="$HOME/Android/SDK"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
-export ANDROID_HOME=$HOME/Android/SDK
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH=$PATH:"$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/build-tools"    # ビルトツールは別途パスへ追加必要
 
 # Flutter

@@ -98,3 +98,10 @@ alias vim=nvim
 # ------------------------------------------------------------------------
 # .zlocalに$DOTFILE_PATHを設定
 alias odotfile='code $DOTFILE_PATH'
+
+
+
+# ------------------------------------------------------------------------
+# Open AndroidStudio
+# ------------------------------------------------------------------------
+alias open-android-studio='/usr/local/android-studio/bin/studio.sh'

@@ -22,12 +22,13 @@ if [ -f /proc/sys/fs/binfmt_misc/WSLInterop ]; then
   # パスを環境変数へ追加
   export ANDROID_HOME=$HOME/Android/SDK
   export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+  export PATH="$PATH:$ANDROID_HOME/tools"
   export PATH="$PATH:$ANDROID_HOME/build-tools"    # ビルトツールは別途パスへ追加必要
 
   exec $SHELL -l
 
   # Platform Tools
-  sdkmanager --install "platform-tools"
+  sdkmanager --install "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
   # 同じくパス設定
   export PATH="$PATH:$ANDROID_HOME/platform-tools"
@@ -36,6 +37,7 @@ if [ -f /proc/sys/fs/binfmt_misc/WSLInterop ]; then
   # adb を実行してインストール確認 (正しくバージョンが表示されれば OK)
   adb --version
 
+  sdkmanager --update
   sdkmanager --licenses
 else
   echo "Other os"
