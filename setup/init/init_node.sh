@@ -4,10 +4,7 @@
 # https://docs.volta.sh/guide/getting-started
 curl https://get.volta.sh | bash
 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+export NODE_BREW_HOME="$HOME/.nodebrew"
+export PATH="$NODE_BREW_HOME/current/bin:$PATH"
 
-volta install node
-node -v
-
-volta install yarn
+brew install nodebrew
