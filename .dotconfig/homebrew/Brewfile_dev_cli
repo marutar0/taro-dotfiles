@@ -32,7 +32,7 @@ brew "gibo"
 # If you want to make docker environment without docker desktop,
 # use 'brew docker' instead of  'cask docker'.
 # brew "docker"
-cask "docker"
+cask "docker-desktop"
 
 # xxenv
 brew "tfenv"
@@ -56,9 +56,9 @@ brew "tflint"
 brew "neovim"
 
 # Flutter
-if OS.mac?
-    brew "flutter"
-end
+# if OS.mac?
+#     brew "flutter"
+# end
 
 # Font
 # tap "delphinus/sfmono-square"
