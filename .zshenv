@@ -9,7 +9,7 @@ export ZDOTDIR=$HOME
 export ZSHRC_DIR=$ZDOTDIR/.dotconfig/zsh/rc
 
 # Display
-export DISPLAY=$(ipconfig.exe | grep "IPv4" | head -1 | awk '{print $NF}' | awk 'sub(/\r$/,"")'):0
+# export DISPLAY=$(ipconfig.exe | grep "IPv4" | head -1 | awk '{print $NF}' | awk 'sub(/\r$/,"")'):0
 
 # history
 export HISTSIZE=10000

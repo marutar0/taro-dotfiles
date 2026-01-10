@@ -8,14 +8,14 @@ brew "tree"
 brew "bat"
 
 # AWS
-brew "awscli"
-brew "git-remote-codecommit"
+# brew "awscli"
+# brew "git-remote-codecommit"
 
-tap "jimon-s/awsmfa"
-brew "jimon-s/awsmfa/awsmfa"
+# tap "jimon-s/awsmfa"
+# brew "jimon-s/awsmfa/awsmfa"
 
-tap "jimon-s/pipeline-lens"
-brew "jimon-s/pipeline-lens/pipeline-lens"
+# tap "jimon-s/pipeline-lens"
+# brew "jimon-s/pipeline-lens/pipeline-lens"
 
 cask "session-manager-plugin"
 
@@ -45,9 +45,9 @@ brew "goenv", args: ["HEAD"]
 brew "tflint"
 
 # Java
-cask "corretto11"
-brew "maven"
-brew "gradle"
+# cask "corretto11"
+# brew "maven"
+# brew "gradle"
 
 # Swift
 # brew "swiftlint"
