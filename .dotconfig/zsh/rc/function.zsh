@@ -13,5 +13,9 @@ function repository-select () {
       echo "open ${selected_dir}"
       code $GHQ_PATH/${selected_dir}
     fi
+    if [ "$mode" = "opencontainer" ]; then
+      echo "devcontainer open ${selected_dir}"
+      devcontainer open $GHQ_PATH/${selected_dir}
+    fi
   fi
 }

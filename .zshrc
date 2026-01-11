@@ -74,3 +74,11 @@ source $ZSHRC_DIR/xxenv.zsh
 if [ -e $ZDOTDIR/.zlocal ]; then
     source $ZDOTDIR/.zlocal
 fi
+
+if [[ `uname -m` == 'arm64' ]]; then
+    # The following lines have been added by Docker Desktop to enable Docker CLI completions.
+    fpath=(/Users/taro-mac/.docker/completions $fpath)
+    autoload -Uz compinit
+    compinit
+    # End of Docker CLI completions
+fi

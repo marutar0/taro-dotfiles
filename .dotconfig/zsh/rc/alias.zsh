@@ -16,6 +16,7 @@ alias gd='git diff'
 alias gf='git fetch -p --all'
 alias g='repository-select change'
 alias gp='repository-select open'
+alias gd='repository-select opencontainer'
 
 # ------------------------------------------------------------------------
 # AWS
@@ -96,10 +97,8 @@ alias vim=nvim
 # ------------------------------------------------------------------------
 # Open dotfiles
 # ------------------------------------------------------------------------
-# .zlocalに$DOTFILE_PATHを設定
-alias odotfile='code $DOTFILE_PATH'
-
-
+export DOTFILE_PATH=$GHQ_PATH/taro-dotfiles
+alias open-dotfile='code $DOTFILE_PATH'
 
 # ------------------------------------------------------------------------
 # Open AndroidStudio
