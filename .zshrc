@@ -82,3 +82,6 @@ if [[ `uname -m` == 'arm64' ]]; then
     compinit
     # End of Docker CLI completions
 fi
+
+# GHQ
+export GHQ_PATH=`echo $(ghq root)`

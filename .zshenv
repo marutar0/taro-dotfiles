@@ -32,6 +32,3 @@ export PATH="$PATH:$ANDROID_HOME/build-tools"    # ビルトツールは別途�
 # Flutter
 export FLUTTER_ROOT="$HOME/flutter"
 export PATH="$PATH:$FLUTTER_ROOT/bin"
-
-# GHQ
-export GHQ_PATH=`echo $(ghq root)`
