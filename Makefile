@@ -35,3 +35,6 @@ init-flutter:
 	
 init-vim-plugins:
 	bash ./setup/init/init_vim_plugins.sh
+
+init-docker:
+	bash ./setup/init/init_docker.sh

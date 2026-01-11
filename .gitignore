@@ -92,6 +92,7 @@
 !/setup/init/init_vim_plugins.sh
 !/setup/init/init_zinit.sh
 !/setup/init/init_zi.sh
+!/setup/init/init_docker.sh
 !/setup/init/lima_docker_limit.plist
 !/setup/init/init_flutter.sh
 !/setup/init/init_android_studio.sh
